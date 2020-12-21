@@ -1,6 +1,8 @@
 package guru.springframework.domain;
 
 
+import lombok.*;
+
 import javax.persistence.*;
 
 @Entity
@@ -15,6 +17,7 @@ public class Notes {
 
     @Lob
     private String recipeNotes;
+
 
     public Long getId() {
         return id;
